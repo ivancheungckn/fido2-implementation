@@ -1,0 +1,18 @@
+{
+  "name": "fido2-implementation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@simplewebauthn/server": "^7.2.0",
+    "@types/express-session": "^1.17.7",
+    "base64url": "^3.0.1",
+    "cbor": "^8.1.0",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "memorystore": "^1.6.7",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}

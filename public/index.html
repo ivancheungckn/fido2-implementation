@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+  <script src="https://unpkg.com/@simplewebauthn/browser/dist/bundle/index.es5.umd.min.js"></script>
+  <link rel="stylesheet" href="./styles.css" />
+  <title>FIDO2 Implementation</title>
+</head>
+
+<body>
+  <h1>FIDO2 Implementation</h1>
+  <div class="container">
+    <div>
+      <h3>Please input username before registration or authentication</h1>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" autocomplete="webauthn" autofocus />
+    </div>
+
+
+    <div id="registration">
+      <button id="registerButton">
+        <strong>Register</strong>
+      </button>
+      <p id="registerSuccess" class="success"></p>
+      <p id="registerError" class="error"></p>
+      <details open>
+        <summary>Console</summary>
+        <textarea id="registerDebug"></textarea>
+      </details>
+    </div>
+
+    <div id="authentication">
+      <form onsubmit="return false;">
+        <button id="authenticationButton">
+          <strong>Authenticate</strong>
+        </button>
+      </form>
+      <p id="authenticationSuccess" class="success"></p>
+      <p id="authenticationError" class="error"></p>
+      <details open>
+        <summary>Console</summary>
+        <textarea id="authenticationDebug"></textarea>
+      </details>
+    </div>
+
+  </div>
+  <script src="./authAndRegister.js"></script>
+
+</body>
+
+</html>
